@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
-}
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "extends": [
+      "next/core-web-vitals",
+      "eslint:recommended",
+      "react-app",
+      "plugin:react-hooks/recommended",
+      "plugin:react/jsx-runtime"
+    ],
+    "overrides": [],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "ecamFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": ["react"],
+    "rules": {
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope" : "off"
+    }
+  }
