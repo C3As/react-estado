@@ -13,7 +13,7 @@ export default function MenuItem(props: MenuItemProps) {
             <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-full p-5">
                 {React.cloneElement(props.icone, {size:90, stroke: 1, className: 'opacity-40' })}
             </div>
-            <span className="opacity-40 font-black text-3xl text-white">{props.texto}</span>
+            <span className="opacity-40 font-black text-2xl text-white">{props.texto}</span>
        </Link>
     )
 }
