@@ -35,3 +35,5 @@ export default ContadorContext
     const obj = useContext(ContadorContext);
 
      <span className="font-black text-6xl">{obj.numero}</span>
+
+=> => arquivo Real.ts com configurações regionais, neste caso Brasil
